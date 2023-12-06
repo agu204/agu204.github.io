@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    background: rgb(20, 17, 70);
+    background: linear-gradient(0deg, rgba(20, 17, 70, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.nav-enlace {
+    text-decoration: none;
+    display: in-lineblock;
+    background-color: #3a3333;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: 3px solid rgb(106, 42, 165);
+    border-radius: 22px;
+
+}
+
+.nav-enlace:hover {
+    background-color: #000407;
+
+}
+
+nav {
+    background-color: #000407;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#contenedor {
+    font-family: 'Oswald', sans-serif;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    color: #fff;
+    display: flex;
+    background-color: transparent;
+
+}
+
+
+
+#columna {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+#cartas1 {
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 4px dotted gray;
+}
+
+#rttk {
+    animation: carta1 2s;
+    animation-delay: 1s;
+    transform: translate(1000px, 100px);
+    transform: rotate(180deg);
+}
+
+@keyframes carta1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+#back {
+    animation: carta2 2s;
+    animation-delay: 1s;
+    transform: scale(2, 1.75);
+    transform: translate(250px, 5px);
+}
+
+@keyframes carta2 {
+    0% {
+        transform: rotate(0deg) ;
+    }
+    25% {
+        transform: rotate(45deg) ;
+    }
+
+    50% {
+        transform: rotate(90deg) ;
+    }
+
+    75% {
+        transform: rotate(180deg) ;
+    }
+    100% {
+        transform: rotate(360deg) ;
+    }
+}
+#cartas2 {
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 4px dotted gray;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    background-color: #1e2220;
+    color: #ffffff;
+    text-align: center;
+    padding: 3em;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: blue;
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    nav,
+    a {
+        font-size: 1.3vb;
+    }
+
+    nav {
+        padding: 7px 28px;
+        margin: 14px 1vb;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav,
+    a {
+        font-size: 0.9vb;
+    }
+
+    nav {
+        padding: 5px 15px;
+        margin: 14px 0.5vb;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #contenedor {
+        width: 75vh;
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contenedor {
+        width: 45vh;
+        font-size: 1.5vh;
+    }
+}

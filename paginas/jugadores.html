@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\imagenes\icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesjugadores.css">
+    <title>FC FUTBIN</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>FC FUTBIN</h1>
+        <p>LA MEJOR WEB PARA ESTAR INFORMADOS SOBRE FC24</p>
+    </header>
+
+
+    <nav>
+
+        <a href="../index.html" class="nav-enlace">Inicio</a>
+        <a href="" class="nav-enlace">Jugadores</a>
+        <a href="sbcs.html" class="nav-enlace">SBCs</a>
+        <a href="evoluciones.html" class="nav-enlace">Evolutions</a>
+        <a href="info.html" class="nav-enlace">INFO FC24</a>
+
+    </nav>
+
+    
+        <section id="contenedor">
+            <form action="#" method="post">
+                <label>FILTROS:</label>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label>Género:</label>
+                <label>Masculino: <input type="radio" name="genero" value="masculino"> </label>
+                <label>Femenino: <input type="radio" name="genero" value="femenino"> </label>
+                <label>Precio Maximo:</label>
+                <label> <input type="range" min="0" max="1000000" value="4000" step="1000" title="Precio aporx..."
+                        name="precios" /></label>
+
+                <label>Ligas:</label>
+                <label>LIGA EASPORT:<input type="checkbox" name="equipo[]" value="LIGA EASPORT"> </label>
+                <label>PREMIER LEAGUE:<input type="checkbox" name="equipo[]" value="PREMIER LEAGUE"> </label>
+                <label>LIGE 1:<input type="checkbox" name="equipo[]" value="LIGE 1"> </label>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+                <button type="submit">Buscar Jugador</button>
+        </section>
+    
+
+    <footer>
+        <p>FC FUTBIN</p>
+        <p>WEB TOTALMENTE DISEÑADA POR PERSONAL ESPAÑOL</p>
+    </footer>
+
+</body>
+
+</html>

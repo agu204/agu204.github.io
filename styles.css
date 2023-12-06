@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: url(imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    background: rgb(20, 17, 70);
+    background: linear-gradient(0deg, rgba(20, 17, 70, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.nav-enlace {
+    text-decoration: none;
+    display: in-lineblock;
+    background-color: #3a3333;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: 3px solid rgb(106, 42, 165);
+    border-radius: 22px;
+
+}
+
+.nav-enlace:hover {
+    background-color: #000407;
+
+}
+
+nav {
+    background-color: #000407;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#incioCont {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    position: relative;
+
+}
+
+section {
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #FFFF00;
+}
+
+th,
+td {
+    padding: 0.5em;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    background-color: #1e2220;
+    color: #ffffff;
+    text-align: center;
+    padding: 3em;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: blue;
+
+
+}
+
+#spain {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+#monedas {
+    position: absolute;
+    top: auto;
+    right: auto;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+@media only screen and (max-width: 1024px) {
+
+    nav,
+    a {
+        font-size: 1.3vb;
+    }
+
+    nav {
+        padding: 7px 28px;
+        margin: 14px 1vb;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    
+    nav,
+    a {
+        font-size: 0.9vb;
+    }
+
+
+    nav {
+        padding: 5px 15px;
+        margin: 14px 0.5vb;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #inicioCont {
+        width: 75vh;
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #inicioCont {
+        width: 45vh;
+        font-size: 1.5vh;
+    }
+}
